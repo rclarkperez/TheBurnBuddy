@@ -11,8 +11,9 @@ export const EditExercisePage = ({ exercise }) => {
     const [date, setDate]      = useState(exercise.date.slice(0,10));
 
     const history = useHistory();
-        const editExercise = async () => {
-        const response = await fetch(`/exercises/${exercise._id}`, {
+
+    const editExercise = async () => {
+    const response = await fetch(`https://burn-buddy.herokuapp.com/exercises/${exercise._id}`, {
             method: 'PUT',
             body: JSON.stringify({ 
                 name:name,  

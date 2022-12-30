@@ -1,11 +1,14 @@
 import 'dotenv/config';
+import cors from 'cors';
 import express from 'express';
 import * as exercises from './exercises-model.mjs';
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(express.json());
 
+//using cors
+app.use(cors());
 
 // CREATE controller ******************************************
 app.post ('/exercises', (req,res) => { 
@@ -120,6 +123,6 @@ app.put('/exercises/:_id', (req, res) => {
 });
 
 
-app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}...`);
+app.listen(PORT || 'https://burn-buddy.herokuapp.com/', () => {
+    console.log(`Server listening on port ${PORT || 'https://burn-buddy.herokuapp.com/'}...`);
 });

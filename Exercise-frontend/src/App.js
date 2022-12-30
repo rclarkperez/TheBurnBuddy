@@ -29,15 +29,15 @@ function App() {
           <Nav />
 
           <main>
-            <Route path="/" exact>
+            <Route exact path="/">
               <HomePage setExercise={setExercise} />
             </Route>
 
-            <Route path="/add-exercise">
+            <Route exact path="/add-exercise">
               <AddExercisePage />
             </Route>
             
-            <Route path="/edit-exercise">
+            <Route exact path="/edit-exercise">
               <EditExercisePage exercise={exercise} />
             </Route>
           </main>

@@ -13,7 +13,7 @@ export const AddExercisePage = () => {
 
     const addExercise = async () => {
         const newExercise = { name, reps, weight, unit, date};
-        const response = await fetch('/exercises', {
+        const response = await fetch('https://burn-buddy.herokuapp.com/exercises', {
             method: 'post',
             body: JSON.stringify(newExercise),
             headers: {
