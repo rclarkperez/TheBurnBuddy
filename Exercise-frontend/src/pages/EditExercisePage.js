@@ -58,7 +58,7 @@ export const EditExercisePage = ({ exercise }) => {
                         onChange={e => setReps(e.target.value)} 
                         id="reps" />
 
-                    <label htmlFor="weight">Weight/Distance</label>
+                    <label htmlFor="weight">Weight/Body Weight/Distance</label>
                     <input
                         type="number"
                         value={weight}
@@ -77,7 +77,6 @@ export const EditExercisePage = ({ exercise }) => {
                             <option value="kg" >kg</option>
                             <option value="lb">lbs</option>
                             <option value="miles">miles</option>
-                            <option value="N/A">N/A</option>
                             </select>                        
 
                     <label htmlFor="date">Date recorded</label>
