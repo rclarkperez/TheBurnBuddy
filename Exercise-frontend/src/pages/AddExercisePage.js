@@ -56,7 +56,7 @@ export const AddExercisePage = () => {
                         onChange={e => setReps(e.target.value)} 
                         id="reps" />
 
-                    <label htmlFor="weight">Weight</label>
+                    <label htmlFor="weight">Weight/Disance</label>
                     <input
                         type="number"
                         required
