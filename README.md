@@ -1,2 +1,2 @@
 # The Burn Budy 
-A MERN stack (MongoDB, Express.js, React.js and node.js) exercise web app initially created for a web development project at Oregon State University. App allows you to create, edit and delete custom exercises that stores them in a dynamic table. 
+A MERN stack (MongoDB, Express, React and Node) exercise web app initially created for a web development project at Oregon State University. App allows you to create, edit and delete custom exercises that stores them in a dynamic table. 
