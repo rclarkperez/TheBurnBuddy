@@ -74,10 +74,10 @@ export const EditExercisePage = ({ exercise }) => {
                         value={unit}
                         onChange={e => setUnit(e.target.value)} 
                         id="unit" >
-                            <option value="kg" 
-                            >kg</option>
+                            <option value="kg" >kg</option>
                             <option value="lb">lbs</option>
                             <option value="miles">miles</option>
+                            <option value="N/A">N/A</option>
                             </select>                        
 
                     <label htmlFor="date">Date recorded</label>
