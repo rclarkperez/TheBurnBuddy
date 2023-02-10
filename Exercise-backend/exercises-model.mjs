@@ -22,7 +22,7 @@ db.once("open", (err) => {
 const exerciseSchema = mongoose.Schema({
 	name: { type: String, required: true },
 	reps: { type: Number, required: true, min: 1 },
-    weight: { type: Number, required: true, min: 0  },
+    weight: { type: Number, required: true, min: 1  },
     unit: { type: String, required: true },
     date: { type: Date, required: true, default: new Date()}
 });
